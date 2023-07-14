@@ -12,7 +12,8 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 // @SpringBootTest(properties = {"spring.aop.proxy-target-class=false"}) // JDK 동적 프록시
-@SpringBootTest(properties = {"spring.aop.proxy-target-class=true"}) // CGLIB 프록시
+// @SpringBootTest(properties = {"spring.aop.proxy-target-class=true"}) // CGLIB 프록시
+@SpringBootTest
 @Import(ProxyDIAspect.class)
 public class ProxyDITest {
 
